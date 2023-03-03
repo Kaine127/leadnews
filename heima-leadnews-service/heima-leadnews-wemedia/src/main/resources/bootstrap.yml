@@ -1,0 +1,19 @@
+server:
+  port: 51803
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.130:8848
+      config:
+        server-addr: 192.168.200.130:8848
+        file-extension: yml
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+tess4j:
+  data-path: E:\code-cloud\tessdata
+  language: chi_sim
